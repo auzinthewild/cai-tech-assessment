@@ -30,7 +30,6 @@ export default function App() {
       </calcite-shell>
 
       <div ref={mapDivRef} style={{ height: "100vh", width: "100%" }} />
-      <QueryPanel />
     </>
   );
 }
