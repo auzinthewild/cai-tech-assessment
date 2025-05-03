@@ -9,7 +9,7 @@ import LayerList from "@arcgis/core/widgets/LayerList";
 import Legend from "@arcgis/core/widgets/Legend";
 import QueryPanel from "../components/QueryPanel";
 
-interface Props {
+interface InfoPanelType {
   id: string;
   label: string;
   activeId: string | null;
@@ -17,7 +17,7 @@ interface Props {
   panelStyle?: React.CSSProperties;
 }
 
-export const InfoPanel: React.FC<Props> = ({
+export const InfoPanel: React.FC<InfoPanelType> = ({
   id,
   label,
   activeId,

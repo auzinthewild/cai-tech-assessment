@@ -8,11 +8,11 @@ import { ActionBar } from "./ActionBar";
 import { InfoPanel } from "./InfoPanel";
 import type MapView from "@arcgis/core/views/MapView";
 
-interface Props {
+interface InfoWrapperType {
   view: MapView | null;
 }
 
-export const InfoPanelWrapper: React.FC<Props> = ({ view }) => {
+export const InfoPanelWrapper: React.FC<InfoWrapperType> = ({ view }) => {
   const [activeId, setActiveId] = useState<string | null>("query");
 
   const handleSelect = useCallback(
