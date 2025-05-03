@@ -32,7 +32,7 @@ export const LayerDataProvider: LayerDataProviderType = {
             outline: {
               type: "simple-line",
               style: "dash",
-              width: 2,
+              width: 1.5,
               color: [255, 0, 0, 1],
             },
           }),
