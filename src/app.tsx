@@ -6,7 +6,6 @@
  */
 import React from "react";
 import { useMap } from "./hooks/useMap";
-import QueryPanel from "./components/QueryPanel";
 import { defineCustomElements } from "@esri/calcite-components/loader";
 import { InfoPanelWrapper } from "./components/InfoPanelWrapper";
 import { ReactCalciteShell } from "@esri/calcite-components/types/react";
