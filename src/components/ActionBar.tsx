@@ -12,13 +12,13 @@ export interface ActionSpec {
   label: string;
 }
 
-interface Props {
+interface ActionBarType {
   actions: readonly ActionSpec[];
   activeId: string | null;
   onSelect: (id: string) => void;
 }
 
-export function ActionBar({ actions, activeId, onSelect }: Props) {
+export function ActionBar({ actions, activeId, onSelect }: ActionBarType) {
   const barRef = useRef<HTMLCalciteActionBarElement | null>(null);
 
   const handleClick = (e) => {
